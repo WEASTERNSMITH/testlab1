@@ -1,1 +1,1 @@
-wget https://get.gravitational.com/teleport_9.2.4_amd64.deb && dpkg -i teleport_9.2.4_amd64.deb && teleport start --roles=node --token=bdb0bbb6a835d1b4b0bcdffbb24b2c42 --auth-server=takismith.teleport.sh:443
+wget https://get.gravitational.com/teleport_9.2.4_amd64.deb && dpkg -i teleport_9.2.4_amd64.deb && teleport start --roles=node --token=cbac7271937bbf807c7b1e4d5c727143 --auth-server=telsa.teleport.sh:443
