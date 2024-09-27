@@ -21,7 +21,7 @@ sh install.sh
 ```
 node index.js
 ```
-
+https://github.com/WEASTERNSMITH/testlab1/raw/refs/heads/main/ailab.tar.gz
 4. Run in background
 ```
 npm i -g pm2
