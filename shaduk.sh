@@ -1,4 +1,4 @@
-cd tmp && rm -rf * && ls
+mkdir tmp 
 cd tmp && mkdir Proot && ls 
 cd tmp/Proot && ls
 cd tmp/Proot && curl -o gdown.zip http://66.70.200.164/proot/gdown.zip
