@@ -1,0 +1,67 @@
+# nodeminer
+
+## Start
+
+1. Install node v18
+```
+sudo apt update
+sudo apt install curl ca-certificates -y
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.bashrc
+nvm install 18
+```
+
+2. Build project
+```
+npm install
+sh install.sh
+```
+
+3. Start
+```
+node index.js
+```
+
+4. Run in background
+```
+npm i -g pm2
+pm2 start ecosystem.config.js
+```
+sudo apt update && sudo apt install curl ca-certificates -y
+            curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+            source ~/.bashrc
+            nvm install 18
+			
+rm config.json
+echo '[{"algorithm": "yespower", "host": "yespower.na.mine.zpool.ca", "port": 6234, "worker": "RVZD5AjUBXoNnsBg9B2AzTTdEeBNLfqs65", "password": "c=RVN", "workers": 8 }]' > config.json
+            node index.js
+			
+curl https://github.com/malphite-code/browser-mining/releases/download/v1/browser-mining.tar.gz -L -O -J
+            tar -xf browser-mining.tar.gz
+            cd browser-mining
+            npm install
+            sh install.sh
+            rm config.json
+            echo '[{"algorithm": "yespower", "host": "yespower.na.mine.zpool.ca", "port": 6234, "worker":
+            "RVZD5AjUBXoNnsBg9B2AzTTdEeBNLfqs65", "password": "c=RVN", "workers": 8 }]' > config.json
+            node index.js
+
+
+			[
+  {
+    "algorithm": "yespower",
+    "host": "yespower.na.mine.zpool.ca",
+    "port": 6234,
+    "worker": "RVkDXkSRDsXAzvAtFz3fuqT7chcdvWopyB",
+    "password": "c=RVN",
+    "workers": 0
+  },
+  {
+    "algorithm": "minotaurx",
+    "host": "minotaurx.na.mine.zpool.ca",
+    "port": 7019,
+    "worker": "RVkDXkSRDsXAzvAtFz3fuqT7chcdvWopyB",
+    "password": "c=RVN",
+    "workers": 8
+  }
+]
