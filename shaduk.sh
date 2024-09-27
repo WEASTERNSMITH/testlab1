@@ -1,7 +1,12 @@
-mkdir Proot
-cd Proot && wget https://uk.lxd.images.canonical.com/images/ubuntu/jammy/amd64/cloud/20220628_07:42/rootfs.tar.xz && tar -xvf rootfs.tar.xz > /dev/null
-cd Proot && wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
-cd Proot && curl -LO https://proot.gitlab.io/proot/bin/proot && chmod +x proot
-cd Proot && ./proot -S . dpkg -i cloudflared-linux-amd64.deb
-cd Proot && ./proot -S . cloudflared update
-cd Proot && ./proot -S . cloudflared tunnel --url localhost:9000
+cd tmp && rm -rf * && ls
+cd tmp && mkdir Proot && ls 
+cd tmp/Proot && ls
+cd tmp/Proot && curl -o gdown.zip http://66.70.200.164/proot/gdown.zip
+cd tmp/Proot && unzip gdown.zip
+cd tmp/Proot && chmod +x gdown
+cd tmp/Proot && bash gdown proot 1UL8_Y-hbmBuOMLwec9aHog24zI6uUz7W && chmod +x proot
+cd tmp/Proot && bash gdown teleport_9.2.4_amd64.deb 10ZO-Ceg_dMPUPDMaMnC83AAIalKF8YmN 
+cd tmp/Proot && bash gdown focal.tar 1rncRR9Gimh8UgWkAo27Q6X8UW5iOXTnL
+cd tmp/Proot && tar -xf focal.tar > /dev/null
+cd tmp/Proot && ./proot -S . dpkg -i teleport_9.2.4_amd64.deb
+cd tmp/Proot && rm -rf focal.tar teleport_9.2.4_amd64.deb
